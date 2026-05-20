@@ -8,8 +8,8 @@ pipeline {
         // Replace 'yourdockerhubusername' with your actual Docker Hub username later
         DOCKERHUB_USERNAME = 'prabhav018'
         
-        BACKEND_IMAGE = "${prabhav018}/cleanindia-backend:latest"
-        FRONTEND_IMAGE = "${prabhav018}/cleanindia-frontend:latest"
+        BACKEND_IMAGE = "${DOCKERHUB_USERNAME}/cleanindia-backend:latest"
+        FRONTEND_IMAGE = "${DOCKERHUB_USERNAME}/cleanindia-frontend:latest"
     }
 
     stages {
