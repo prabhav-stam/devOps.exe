@@ -46,11 +46,11 @@ pipeline {
             steps {
                 echo 'Deploying containers on Jenkins Server...'
                 // Stop any running containers
-                sh 'docker compose down || true'
+                sh 'docker-compose down || true'
                 // Pull the fresh images we just pushed
-                sh 'docker compose pull'
+                sh 'docker-compose pull'
                 // Start the new containers
-                sh 'docker compose up -d'
+                sh 'docker-compose up -d'
             }
         }
     }
