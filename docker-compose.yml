@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    build: ./backend
+    image: prabhav018/cleanindia-backend:latest
     ports:
       - "3000:3000"
     environment:
@@ -15,7 +15,7 @@ services:
       - app-network
 
   frontend:
-    build: ./frontend
+    image: prabhav018/cleanindia-frontend:latest
     ports:
       - "80:80"
     depends_on:
